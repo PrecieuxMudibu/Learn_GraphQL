@@ -1,3 +1,4 @@
+import DeleteProjectButton from '../components/DeleteProjectButton';
 import { Link, useParams } from 'react-router-dom';
 import Spinner from '../components/Spinner';
 import { useQuery } from '@apollo/client';
@@ -34,7 +35,7 @@ export default function Project() {
 
                     {/* <Edi tProjectForm project={data.project} /> */}
 
-                    {/* <DeleteProjectButton projectId={data.project.id} /> */}
+                    <DeleteProjectButton projectId={data.project.id} />
                 </div>
             )}
         </>
